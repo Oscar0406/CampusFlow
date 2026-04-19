@@ -1,0 +1,45 @@
+university_id: ukm
+display_name: Universiti Kebangsaan Malaysia
+
+llm:
+  provider: groq
+  model: qwen/qwen3-32b
+  api_key_env: LLM_API_KEY
+
+departments:
+  - maintenance
+  - academic
+  - finance
+  - it_support
+  - accommodation
+
+adapters:
+  type: generic_rest
+  sis:
+    base_url: https://sis.ukm.my/api/v1
+    api_key_env: UKM_SIS_KEY
+    schema:
+      student_id: studentNo
+      full_name: fullName
+      programme: course
+      status: status
+  finance:
+    base_url: https://finance.ukm.my/rest
+    api_key_env: UKM_FIN_KEY
+    schema:
+      balance: amount_due
+      scholarship: scholarship_code
+  accommodation:
+    base_url: https://hostel.ukm.my/api
+    api_key_env: UKM_HSG_KEY
+    schema:
+      room_id: room_number
+      status: is_occupied
+      rate: fee_per_month
+
+ticket_store:
+  type: json
+  path: ./data/ukm/
+
+event_bus:
+  type: inline

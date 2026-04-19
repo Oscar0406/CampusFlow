@@ -1,0 +1,47 @@
+university_id: utm
+display_name: Universiti Teknologi Malaysia (Mock Mode)
+
+llm:
+  provider: groq
+  model: qwen/qwen3-32b
+  api_key_env: LLM_API_KEY
+
+departments:
+  - maintenance
+  - academic
+  - finance
+  - it_support
+  - library
+  - procurement
+  - accommodation
+
+adapters:
+  type: generic_rest
+  sis:
+    base_url: http://localhost:8001/api/v2
+    api_key_env: MOCK_API_KEY
+    schema:
+      student_id: id
+      full_name: name
+      programme: programCode
+      status: enrolStatus
+  finance:
+    base_url: http://localhost:8001/api/v2
+    api_key_env: MOCK_API_KEY
+    schema:
+      balance: outstandingAmount
+      scholarship: aidCode
+  accommodation:
+    base_url: http://localhost:8001/api/v2
+    api_key_env: MOCK_API_KEY
+    schema:
+      room_id: roomNo
+      status: status
+      rate: monthlyFee
+
+ticket_store:
+  type: json
+  path: ./data/utm/
+
+event_bus:
+  type: inline

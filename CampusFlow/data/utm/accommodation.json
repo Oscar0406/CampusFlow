@@ -1,0 +1,266 @@
+{
+  "rooms": [
+    {
+      "room_id": "KM-A-101",
+      "block": "Kolej Maju",
+      "floor": 1,
+      "type": "single",
+      "status": "available",
+      "monthly_rate_myr": 280,
+      "amenities": [
+        "wifi",
+        "air_conditioner",
+        "study_desk",
+        "wardrobe"
+      ],
+      "gender": "male"
+    },
+    {
+      "room_id": "KM-A-102",
+      "block": "Kolej Maju",
+      "floor": 1,
+      "type": "single",
+      "status": "occupied",
+      "monthly_rate_myr": 280,
+      "amenities": [
+        "wifi",
+        "air_conditioner",
+        "study_desk",
+        "wardrobe"
+      ],
+      "gender": "male",
+      "occupant_id": "STU-2021-0042"
+    },
+    {
+      "room_id": "KM-A-103",
+      "block": "Kolej Maju",
+      "floor": 1,
+      "type": "double",
+      "status": "available",
+      "monthly_rate_myr": 190,
+      "amenities": [
+        "wifi",
+        "fan",
+        "study_desk",
+        "wardrobe"
+      ],
+      "gender": "male"
+    },
+    {
+      "room_id": "KM-A-201",
+      "block": "Kolej Maju",
+      "floor": 2,
+      "type": "single",
+      "status": "available",
+      "monthly_rate_myr": 280,
+      "amenities": [
+        "wifi",
+        "air_conditioner",
+        "study_desk",
+        "wardrobe"
+      ],
+      "gender": "male"
+    },
+    {
+      "room_id": "KM-A-202",
+      "block": "Kolej Maju",
+      "floor": 2,
+      "type": "double",
+      "status": "occupied",
+      "monthly_rate_myr": 190,
+      "amenities": [
+        "wifi",
+        "fan",
+        "study_desk"
+      ],
+      "gender": "male",
+      "occupant_id": "STU-2022-0118"
+    },
+    {
+      "room_id": "KM-B-101",
+      "block": "Kolej Maju",
+      "floor": 1,
+      "type": "single",
+      "status": "available",
+      "monthly_rate_myr": 280,
+      "amenities": [
+        "wifi",
+        "air_conditioner",
+        "study_desk",
+        "wardrobe"
+      ],
+      "gender": "female"
+    },
+    {
+      "room_id": "KM-B-102",
+      "block": "Kolej Maju",
+      "floor": 1,
+      "type": "single",
+      "status": "occupied",
+      "monthly_rate_myr": 280,
+      "amenities": [
+        "wifi",
+        "air_conditioner",
+        "study_desk",
+        "wardrobe"
+      ],
+      "gender": "female",
+      "occupant_id": "STU-2023-0055"
+    },
+    {
+      "room_id": "KM-B-103",
+      "block": "Kolej Maju",
+      "floor": 1,
+      "type": "double",
+      "status": "available",
+      "monthly_rate_myr": 190,
+      "amenities": [
+        "wifi",
+        "fan",
+        "study_desk",
+        "wardrobe"
+      ],
+      "gender": "female"
+    },
+    {
+      "room_id": "KM-B-201",
+      "block": "Kolej Maju",
+      "floor": 2,
+      "type": "single",
+      "status": "available",
+      "monthly_rate_myr": 280,
+      "amenities": [
+        "wifi",
+        "air_conditioner",
+        "study_desk",
+        "wardrobe"
+      ],
+      "gender": "female"
+    },
+    {
+      "room_id": "KS-A-101",
+      "block": "Kolej Sejahtera",
+      "floor": 1,
+      "type": "single",
+      "status": "available",
+      "monthly_rate_myr": 310,
+      "amenities": [
+        "wifi",
+        "air_conditioner",
+        "study_desk",
+        "wardrobe",
+        "attached_bathroom"
+      ],
+      "gender": "male"
+    },
+    {
+      "room_id": "KS-A-102",
+      "block": "Kolej Sejahtera",
+      "floor": 1,
+      "type": "single",
+      "status": "occupied",
+      "monthly_rate_myr": 310,
+      "amenities": [
+        "wifi",
+        "air_conditioner",
+        "study_desk",
+        "wardrobe",
+        "attached_bathroom"
+      ],
+      "gender": "male",
+      "occupant_id": "STU-2020-0301"
+    },
+    {
+      "room_id": "KS-A-201",
+      "block": "Kolej Sejahtera",
+      "floor": 2,
+      "type": "double",
+      "status": "available",
+      "monthly_rate_myr": 220,
+      "amenities": [
+        "wifi",
+        "air_conditioner",
+        "study_desk"
+      ],
+      "gender": "male"
+    },
+    {
+      "room_id": "KS-B-101",
+      "block": "Kolej Sejahtera",
+      "floor": 1,
+      "type": "single",
+      "status": "available",
+      "monthly_rate_myr": 310,
+      "amenities": [
+        "wifi",
+        "air_conditioner",
+        "study_desk",
+        "wardrobe",
+        "attached_bathroom"
+      ],
+      "gender": "female"
+    },
+    {
+      "room_id": "KS-B-102",
+      "block": "Kolej Sejahtera",
+      "floor": 1,
+      "type": "single",
+      "status": "occupied",
+      "monthly_rate_myr": 310,
+      "amenities": [
+        "wifi",
+        "air_conditioner",
+        "study_desk",
+        "wardrobe",
+        "attached_bathroom"
+      ],
+      "gender": "female",
+      "occupant_id": "STU-2022-0089"
+    },
+    {
+      "room_id": "KS-B-201",
+      "block": "Kolej Sejahtera",
+      "floor": 2,
+      "type": "double",
+      "status": "available",
+      "monthly_rate_myr": 220,
+      "amenities": [
+        "wifi",
+        "air_conditioner",
+        "study_desk"
+      ],
+      "gender": "female"
+    }
+  ],
+  "applications": [],
+  "rules": {
+    "eligibility": "Full-time registered students only",
+    "priority_order": [
+      "year_1_students",
+      "students_from_outside_50km",
+      "students_with_disability",
+      "others"
+    ],
+    "application_deadline": "2025-07-31",
+    "minimum_stay_months": 3,
+    "deposit_myr": 200,
+    "documents_required": [
+      "offer_letter_or_student_id",
+      "proof_of_address",
+      "passport_photo",
+      "medical_clearance"
+    ]
+  },
+  "facilities": {
+    "common_areas": [
+      "cafeteria",
+      "laundry_room",
+      "surau",
+      "multipurpose_hall",
+      "parking"
+    ],
+    "curfew": "12:00 AM (guests must leave by 10:00 PM)",
+    "visitor_policy": "Same-gender visitors allowed in common areas only"
+  },
+  "tickets": []
+}

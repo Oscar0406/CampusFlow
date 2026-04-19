@@ -1,0 +1,24 @@
+{
+  "tickets": [],
+  "equipment_registry": [
+    { "asset_id": "AC-KM-A-101", "type": "air_conditioner", "location": "KM-A-101", "brand": "Daikin", "installed_date": "2021-06-01", "last_serviced": "2024-11-15", "status": "operational", "warranty_expiry": "2026-06-01" },
+    { "asset_id": "AC-KM-A-102", "type": "air_conditioner", "location": "KM-A-102", "brand": "Daikin", "installed_date": "2021-06-01", "last_serviced": "2024-11-15", "status": "faulty", "warranty_expiry": "2026-06-01" },
+    { "asset_id": "AC-LIB-01", "type": "air_conditioner", "location": "Main Library Level 1", "brand": "York", "installed_date": "2019-03-10", "last_serviced": "2025-01-20", "status": "operational", "warranty_expiry": "2024-03-10" },
+    { "asset_id": "LIFT-KM-01", "type": "lift", "location": "Kolej Maju Block A", "brand": "Otis", "installed_date": "2018-08-01", "last_serviced": "2025-02-01", "status": "operational", "warranty_expiry": "2028-08-01" },
+    { "asset_id": "ELEC-DK-01", "type": "electrical_panel", "location": "Dewan Kuliah A", "brand": "Schneider", "installed_date": "2017-01-15", "last_serviced": "2024-09-10", "status": "operational", "warranty_expiry": "2027-01-15" },
+    { "asset_id": "PUMP-KS-01", "type": "water_pump", "location": "Kolej Sejahtera", "brand": "Grundfos", "installed_date": "2020-04-20", "last_serviced": "2025-03-05", "status": "operational", "warranty_expiry": "2025-04-20" },
+    { "asset_id": "GEN-MAIN-01", "type": "generator", "location": "Main Building Basement", "brand": "Caterpillar", "installed_date": "2015-07-01", "last_serviced": "2025-01-10", "status": "operational", "warranty_expiry": "2025-07-01" }
+  ],
+  "staff": [
+    { "staff_id": "MNT-S01", "name": "Ahmad Razif", "role": "HVAC Technician", "contact": "011-23456789", "available": true },
+    { "staff_id": "MNT-S02", "name": "Lim Beng Huat", "role": "Electrician", "contact": "011-34567890", "available": true },
+    { "staff_id": "MNT-S03", "name": "Rajan a/l Muthu", "role": "Plumber", "contact": "011-45678901", "available": false, "unavailable_until": "2025-04-25" },
+    { "staff_id": "MNT-S04", "name": "Siti Hajar", "role": "General Maintenance", "contact": "011-56789012", "available": true }
+  ],
+  "sla": {
+    "critical": "2 hours",
+    "high": "24 hours",
+    "medium": "3 working days",
+    "low": "7 working days"
+  }
+}

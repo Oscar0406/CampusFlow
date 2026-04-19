@@ -1,0 +1,84 @@
+{
+  "tickets": [],
+  "fee_structure": {
+    "tuition_per_credit_hour_myr": 120,
+    "registration_fee_myr": 150,
+    "lab_fee_myr": 80,
+    "health_insurance_myr": 60,
+    "student_activity_fee_myr": 30,
+    "exam_fee_myr": 50
+  },
+  "scholarships": [
+    {
+      "id": "SCH-001",
+      "name": "Yayasan Biasiswa Negara",
+      "amount_myr": 4500,
+      "per": "semester",
+      "eligibility": {
+        "min_cgpa": 3.5,
+        "max_household_income_myr": 4000,
+        "citizenship": "Malaysian"
+      },
+      "available_slots": 5,
+      "deadline": "2025-05-15"
+    },
+    {
+      "id": "SCH-002",
+      "name": "University Merit Scholarship",
+      "amount_myr": 3000,
+      "per": "semester",
+      "eligibility": {
+        "min_cgpa": 3.7,
+        "max_household_income_myr": null,
+        "citizenship": "any"
+      },
+      "available_slots": 10,
+      "deadline": "2025-05-15"
+    },
+    {
+      "id": "SCH-003",
+      "name": "Bumiputera Excellence Award",
+      "amount_myr": 2500,
+      "per": "semester",
+      "eligibility": {
+        "min_cgpa": 3.3,
+        "max_household_income_myr": 6000,
+        "citizenship": "Malaysian Bumiputera"
+      },
+      "available_slots": 8,
+      "deadline": "2025-05-30"
+    }
+  ],
+  "bursaries": [
+    {
+      "id": "BUR-001",
+      "name": "Bursary Kewangan",
+      "amount_myr": 1500,
+      "per": "semester",
+      "eligibility": {
+        "min_cgpa": 2.0,
+        "max_household_income_myr": 3000,
+        "citizenship": "Malaysian"
+      },
+      "available_slots": 20,
+      "deadline": "2025-05-15"
+    }
+  ],
+  "payment_plans": {
+    "available": true,
+    "min_outstanding_myr": 500,
+    "max_installments": 6,
+    "requires_documents": [
+      "income_proof",
+      "hardship_letter"
+    ],
+    "interest_rate_percent": 0
+  },
+  "refund_policy": {
+    "withdrawal_within_week1_percent": 80,
+    "withdrawal_within_week2_percent": 60,
+    "withdrawal_within_week3_percent": 40,
+    "withdrawal_after_week3_percent": 0,
+    "processing_days": 14
+  }
+}

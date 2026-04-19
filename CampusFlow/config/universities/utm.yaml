@@ -1,0 +1,47 @@
+university_id: utm
+display_name: Universiti Teknologi Malaysia
+
+llm:
+  provider: groq
+  model: qwen/qwen3-32b
+  api_key_env: LLM_API_KEY
+
+departments:
+  - maintenance
+  - academic
+  - finance
+  - it_support
+  - library
+  - procurement
+  - accommodation
+
+adapters:
+  type: json_local
+  sis:
+    base_url: https://sis.utm.my/api/v2
+    api_key_env: UTM_SIS_KEY
+    schema:
+      student_id: id
+      full_name: name
+      programme: programCode
+      status: enrolStatus
+  finance:
+    base_url: https://finance.utm.my/api
+    api_key_env: UTM_FIN_KEY
+    schema:
+      balance: outstandingAmount
+      scholarship: aidCode
+  accommodation:
+    base_url: https://hostel.utm.my/api
+    api_key_env: UTM_HSG_KEY
+    schema:
+      room_id: roomNo
+      status: occupancyStatus
+      rate: monthlyFee
+
+ticket_store:
+  type: json
+  path: ./data/utm/
+
+event_bus:
+  type: inline

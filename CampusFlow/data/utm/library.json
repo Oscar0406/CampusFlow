@@ -1,0 +1,41 @@
+{
+  "tickets": [],
+  "books": [
+    { "isbn": "978-0-13-468599-1", "title": "Clean Code", "author": "Robert C. Martin", "copies_total": 4, "copies_available": 2, "location": "Level 2 - CS Section", "call_number": "QA76.73.J39 M37" },
+    { "isbn": "978-0-201-63361-0", "title": "Design Patterns", "author": "Gang of Four", "copies_total": 3, "copies_available": 0, "location": "Level 2 - CS Section", "call_number": "QA76.64 D47", "next_available": "2025-04-28" },
+    { "isbn": "978-0-13-235088-4", "title": "The Pragmatic Programmer", "author": "Hunt & Thomas", "copies_total": 2, "copies_available": 1, "location": "Level 2 - CS Section", "call_number": "QA76.6 H86" },
+    { "isbn": "978-1-491-95038-2", "title": "Fluent Python", "author": "Luciano Ramalho", "copies_total": 2, "copies_available": 2, "location": "Level 2 - CS Section", "call_number": "QA76.73.P98 R36" },
+    { "isbn": "978-0-07-352332-3", "title": "Database System Concepts", "author": "Silberschatz et al.", "copies_total": 5, "copies_available": 3, "location": "Level 2 - CS Section", "call_number": "QA76.9.D3 S55" },
+    { "isbn": "978-0-13-110362-7", "title": "The C Programming Language", "author": "Kernighan & Ritchie", "copies_total": 3, "copies_available": 3, "location": "Level 2 - CS Section", "call_number": "QA76.73.C15 K47" }
+  ],
+  "study_rooms": [
+    { "room_id": "SR-01", "name": "Study Room 1", "capacity": 6, "level": 2, "features": ["whiteboard", "projector"], "bookable": true },
+    { "room_id": "SR-02", "name": "Study Room 2", "capacity": 4, "level": 2, "features": ["whiteboard"], "bookable": true },
+    { "room_id": "SR-03", "name": "Discussion Pod A", "capacity": 2, "level": 3, "features": ["monitor"], "bookable": true },
+    { "room_id": "SR-04", "name": "Silent Study Room", "capacity": 10, "level": 3, "features": [], "bookable": false, "note": "First come first served, no booking" },
+    { "room_id": "SR-05", "name": "Group Lab", "capacity": 12, "level": 1, "features": ["computers", "projector", "whiteboard"], "bookable": true }
+  ],
+  "borrowing_rules": {
+    "undergraduate": { "max_books": 5, "loan_period_days": 14, "renewal_allowed": true, "max_renewals": 2 },
+    "postgraduate": { "max_books": 10, "loan_period_days": 30, "renewal_allowed": true, "max_renewals": 3 },
+    "staff": { "max_books": 15, "loan_period_days": 60, "renewal_allowed": true, "max_renewals": 5 }
+  },
+  "fines": {
+    "overdue_per_day_myr": 0.50,
+    "max_fine_per_book_myr": 20.00,
+    "lost_book_replacement_policy": "Pay cost price + RM 10 processing fee"
+  },
+  "databases": [
+    { "name": "IEEE Xplore", "url": "https://ieeexplore.ieee.org", "access": "on_campus_and_vpn", "subjects": ["engineering", "computing", "electronics"] },
+    { "name": "Scopus", "url": "https://www.scopus.com", "access": "on_campus_and_vpn", "subjects": ["all"] },
+    { "name": "Web of Science", "url": "https://www.webofscience.com", "access": "on_campus_and_vpn", "subjects": ["all"] },
+    { "name": "ScienceDirect", "url": "https://www.sciencedirect.com", "access": "on_campus_and_vpn", "subjects": ["science", "engineering", "medicine"] },
+    { "name": "ProQuest", "url": "https://www.proquest.com", "access": "on_campus_and_vpn", "subjects": ["social_science", "humanities", "business"] }
+  ],
+  "hours": {
+    "monday_friday": "8:00 AM - 11:00 PM",
+    "saturday": "9:00 AM - 6:00 PM",
+    "sunday": "Closed",
+    "public_holiday": "Closed"
+  }
+}

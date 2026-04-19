@@ -1,0 +1,27 @@
+{
+  "tickets": [],
+  "courses": [
+    { "course_code": "BCS3023", "name": "Software Engineering", "credit_hours": 3, "faculty": "Computing", "semester": "2024/2025-2", "lecturer": "Dr. Norhana Bt Yahya", "max_students": 40, "enrolled": 37, "available_seats": 3 },
+    { "course_code": "BCS2013", "name": "Data Structures & Algorithms", "credit_hours": 3, "faculty": "Computing", "semester": "2024/2025-2", "lecturer": "Prof. Dr. Radziah Mohamad", "max_students": 45, "enrolled": 45, "available_seats": 0 },
+    { "course_code": "BIS3033", "name": "Database Systems", "credit_hours": 3, "faculty": "Computing", "semester": "2024/2025-2", "lecturer": "Dr. Suriayati Chuprat", "max_students": 40, "enrolled": 32, "available_seats": 8 },
+    { "course_code": "MPU3112", "name": "Bahasa Melayu Komunikasi 2", "credit_hours": 2, "faculty": "General Studies", "semester": "2024/2025-2", "lecturer": "Pn. Azlina Bt Ahmad", "max_students": 50, "enrolled": 48, "available_seats": 2 },
+    { "course_code": "BCS4913", "name": "Final Year Project I", "credit_hours": 3, "faculty": "Computing", "semester": "2024/2025-2", "lecturer": "Various", "max_students": 30, "enrolled": 28, "available_seats": 2 }
+  ],
+  "academic_calendar": {
+    "semester": "2024/2025 Semester 2",
+    "start_date": "2025-02-10",
+    "end_date": "2025-06-30",
+    "add_drop_deadline": "2025-02-24",
+    "mid_semester_break": { "start": "2025-04-07", "end": "2025-04-13" },
+    "final_exam_period": { "start": "2025-06-09", "end": "2025-06-27" },
+    "result_release_date": "2025-07-15",
+    "grade_appeal_deadline": "2025-07-29"
+  },
+  "policies": {
+    "grade_appeal_window_days": 14,
+    "transcript_processing_days": "3-5 working days",
+    "credit_transfer_max": 30,
+    "min_cgpa_for_dean_list": 3.67,
+    "probation_threshold_cgpa": 2.0
+  }
+}

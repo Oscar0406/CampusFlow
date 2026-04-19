@@ -1,0 +1,26 @@
+{
+  "tickets": [],
+  "approved_vendors": [
+    { "vendor_id": "VEN-001", "name": "Syarikat Teknologi Sdn Bhd", "categories": ["it_hardware", "software_license"], "is_panel": true, "contact": "tech@syarikattek.my" },
+    { "vendor_id": "VEN-002", "name": "Office Pro Supply", "categories": ["office_supplies", "furniture"], "is_panel": true, "contact": "sales@officepro.my" },
+    { "vendor_id": "VEN-003", "name": "BuildCon Services", "categories": ["maintenance_materials", "structural"], "is_panel": true, "contact": "info@buildcon.my" },
+    { "vendor_id": "VEN-004", "name": "EduTech Systems", "categories": ["av_equipment", "it_hardware"], "is_panel": true, "contact": "sales@edutech.my" },
+    { "vendor_id": "VEN-005", "name": "Campus Supplies Berhad", "categories": ["lab_equipment", "office_supplies", "event_supplies"], "is_panel": false, "contact": "order@campussupplies.my" }
+  ],
+  "approval_tiers": [
+    { "level": "auto_approved", "min_myr": 0, "max_myr": 499.99, "approver": "None required", "turnaround": "Same day" },
+    { "level": "head_of_dept", "min_myr": 500, "max_myr": 1999.99, "approver": "Head of Department", "turnaround": "2-3 working days" },
+    { "level": "manager_approval", "min_myr": 2000, "max_myr": 9999.99, "approver": "Finance Manager", "turnaround": "5-7 working days" },
+    { "level": "director_approval", "min_myr": 10000, "max_myr": null, "approver": "Director / VP Finance", "turnaround": "10-14 working days", "extra_requirements": ["3 vendor quotations", "project justification report"] }
+  ],
+  "active_purchase_orders": [
+    { "po_id": "PO-2025-041", "item": "HP Laptop (x5)", "department": "Faculty of Computing", "amount_myr": 18500, "status": "approved", "vendor": "VEN-001", "expected_delivery": "2025-04-30" },
+    { "po_id": "PO-2025-038", "item": "Office Chairs (x20)", "department": "Admin", "amount_myr": 4200, "status": "pending_manager", "vendor": "VEN-002", "submitted_date": "2025-04-14" }
+  ],
+  "budget_remaining": {
+    "faculty_of_computing": { "fy2025_budget_myr": 120000, "spent_myr": 43200, "remaining_myr": 76800 },
+    "library": { "fy2025_budget_myr": 35000, "spent_myr": 12400, "remaining_myr": 22600 },
+    "admin": { "fy2025_budget_myr": 80000, "spent_myr": 31600, "remaining_myr": 48400 },
+    "student_affairs": { "fy2025_budget_myr": 25000, "spent_myr": 8900, "remaining_myr": 16100 }
+  }
+}

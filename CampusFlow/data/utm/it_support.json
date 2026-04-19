@@ -1,0 +1,27 @@
+{
+  "tickets": [],
+  "systems": [
+    { "system_id": "SYS-001", "name": "Student Portal (e-Daftar)", "url": "https://edaftar.utm.my", "status": "operational", "last_incident": "2025-03-10", "uptime_percent_30d": 99.2 },
+    { "system_id": "SYS-002", "name": "Campus Wi-Fi (eduroam)", "status": "operational", "coverage_areas": ["Main Library", "Faculty Blocks A-F", "DK A-D", "Kolej Maju", "Kolej Sejahtera"], "last_incident": "2025-04-01", "uptime_percent_30d": 97.8 },
+    { "system_id": "SYS-003", "name": "Learning Management System (Frog VLE)", "url": "https://frogvle.utm.my", "status": "operational", "last_incident": "2025-02-20", "uptime_percent_30d": 98.5 },
+    { "system_id": "SYS-004", "name": "Library Online Database (EzProxy)", "url": "https://ezproxy.utm.my", "status": "degraded", "note": "Intermittent access from off-campus. VPN required.", "last_incident": "2025-04-16", "uptime_percent_30d": 94.1 },
+    { "system_id": "SYS-005", "name": "Campus Email (Office 365)", "status": "operational", "last_incident": "2025-01-05", "uptime_percent_30d": 99.9 },
+    { "system_id": "SYS-006", "name": "Exam Results System", "status": "operational", "last_incident": "2024-12-15", "uptime_percent_30d": 99.7 }
+  ],
+  "known_issues": [
+    { "issue_id": "KI-001", "description": "EzProxy off-campus access intermittent — VPN (GlobalProtect) required until further notice", "affected_system": "SYS-004", "reported_date": "2025-04-16", "status": "in_progress", "workaround": "Use GlobalProtect VPN before accessing library databases" },
+    { "issue_id": "KI-002", "description": "Wi-Fi dead zone reported at KS Block B Level 3", "affected_system": "SYS-002", "reported_date": "2025-04-10", "status": "scheduled", "scheduled_fix": "2025-04-20" }
+  ],
+  "software_licenses": [
+    { "software": "Microsoft Office 365", "license_type": "student", "seats_total": 5000, "seats_used": 3821, "seats_available": 1179, "eligibility": "all_registered_students" },
+    { "software": "MATLAB", "license_type": "campus", "seats_total": 200, "seats_used": 145, "seats_available": 55, "eligibility": "engineering_and_computing_students" },
+    { "software": "AutoCAD", "license_type": "lab_only", "seats_total": 60, "seats_used": 60, "seats_available": 0, "eligibility": "architecture_and_civil_students", "note": "Lab use only, no home license" }
+  ],
+  "helpdesk": {
+    "email": "itsupport@utm.my",
+    "phone": "07-5531234",
+    "counter_location": "N28 Ground Floor",
+    "hours": "Mon-Fri 8:00AM - 5:00PM",
+    "walk_in_available": true
+  }
+}
