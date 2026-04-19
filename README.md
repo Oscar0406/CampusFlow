@@ -16,7 +16,7 @@ specific, actionable responses.
 
 A student types:
 
-> *"Bro wifi kat library lembab gila, pastu journal database pun can't access. Also nak tahu ada bilik hostel tak untuk sem ni?"*
+> *"Bro, the WiFi at the library is really slow, and I also can’t access the journal database. Also, I want to know if there are any hostel rooms available for this semester?"*
 
 CampusFlow:
 1. Reads the message and identifies **IT Support** + **Library** + **Housing** are all needed
@@ -132,7 +132,7 @@ cp .env.example .env
 Open `.env` and fill in:
 
 ```env
-GROQ_API_KEY=your_groq_key_here     # get one free at console.groq.com
+LLM_API_KEY=your_LLM_key_here
 ```
 
 Everything else is optional for local development.
@@ -177,7 +177,7 @@ Add this to your `.env`:
 MOCK_API_KEY=anything    # any non-empty string works
 ```
 
-Your `GROQ_API_KEY` is still required — the LLM is real, only the university database
+Your `LLM_API_KEY` is still required — the LLM is real, only the university database
 is mocked.
 
 ---
@@ -194,7 +194,7 @@ uvicorn gateway.gateway:app --reload
 curl -X POST http://localhost:8000/v1/chat \
   -H "Content-Type: application/json" \
   -H "X-University-Id: utm" \
-  -d '{"message": "Ada bilik hostel tak untuk sem ni?", "session_id": ""}'
+  -d '{"message": "Is there any hostel room available for this sem?", "session_id": ""}'
 ```
 
 Response:
@@ -300,7 +300,7 @@ display_name: My University
 llm:
   provider: groq
   model: qwen/qwen3-32b
-  api_key_env: GROQ_API_KEY
+  api_key_env: LLM_API_KEY
 
 departments:
   - maintenance
@@ -357,7 +357,7 @@ See `CONTRIBUTING.md` section 3 for the full pattern including HuggingFace and l
 
 | Variable | Required | Description |
 |---|---|---|
-| `GROQ_API_KEY` | Yes | Groq API key — get one free at [console.groq.com](https://console.groq.com) |
+| `LLM_API_KEY` | Yes | LLM API key |
 | `MOCK_API_KEY` | Mock mode only | Any non-empty string |
 | `LANGSMITH_API_KEY` | Optional | LangSmith tracing |
 | `UTM_SIS_KEY` | Production only | UTM student system API key |
@@ -369,16 +369,7 @@ See `CONTRIBUTING.md` section 3 for the full pattern including HuggingFace and l
 ## Requirements
 
 - Python 3.11+
-- Groq API key (free tier available)
+- LLM API key
 - No database setup required for local development
 
 ---
-
-## For contributors
-
-See **[CONTRIBUTING.md](CONTRIBUTING.md)** for detailed instructions on:
-- Switching or adding LLM providers
-- Renaming departments or environment variables
-- Adding new departments and tools
-- Onboarding new universities
-- Running with the mock API
